@@ -2,6 +2,7 @@ header {
     max-width: 80rem;
     width: 100%;
     padding: 1.25rem 2rem;
+    margin-inline: auto;
 
     display: flex;
     align-items: center;
