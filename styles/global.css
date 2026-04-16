@@ -5,20 +5,20 @@
 }
 
 :root {
-    --snitap-sun:#FFCD1E
-    --snitap-sky-mid:#06B6D4
-    --snitap-sky-light:#67E8F9
-    --snitap-joy-mid:#DB2777
-    --snitap-joy-light:#F472B6
-    --snitap-leaf-mid:#16A34A
+    --snitap-sun: #FFCD1E;
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
     
-    --text:#000000
-    --highlight:#000000
-    --background:#FAFAFA
+    --text: #000000;
+    --highlight: #000000;
+    --background: #FAFAFA;
 
     --ff-base: "Montserrat", sans-serif;
 
-    --text-sm: 0,875rem;
+    --text-sm: 0.875rem;
     --text-base: 1rem;
     --text-lg: 2.5rem;
     --text-xl: 4rem;
@@ -41,4 +41,9 @@ h1 {
 h2 {
     font-size: var(--text-lg);
     line-height: 1.2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
