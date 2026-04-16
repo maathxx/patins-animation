@@ -32,6 +32,47 @@ section.hero {
         animation: slideUp 6s infinite ease;
     }
 
+        /* buttons */
+        & .buttons {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+
+            & .button {
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+
+                border-radius: 5rem;
+
+                transition: scale 350ms;
+
+                &.buy {
+                    padding: 1.5rem 3rem;
+                    background-color: var(--snitap-sun);
+                }
+
+                &.play span {
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                }
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+
+        }
+}
+
+    section.hero .buttons .shadow {
+    box-shadow:
+        0 2px 5px rgb(0 0 0 / .1),
+        0 9px 9px rgb(0 0 0 / .09),
+        0 20px 12px rgb(0 0 0 / .05),
+        0 26px 15px rgb(0 0 0 / .01);
 }
 
 @keyframes slideUp {
