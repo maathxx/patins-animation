@@ -4,6 +4,11 @@ section.hero {
     padding: 2.5rem 2rem;
     margin-inline: auto;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
     & h1 {
         max-width: 40rem;
     }
@@ -29,7 +34,7 @@ section.hero {
 
     & h1 span {
         display: block;
-        animation: slideUp 6s infinite ease;
+        animation: slideUp 5s 2s infinite ease;
     }
 
         /* buttons */
@@ -65,7 +70,77 @@ section.hero {
             }
 
         }
+
+        /* patins */
+
+    & > div:nth-child(2) {
+        display: block;
+        width: 100%;
+        max-width: 30.5rem;
+        height: 30.5rem;
+
+        & .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        & img {
+            position: absolute;
+            width: 100%;
+        }
+
+        & img[src*="ellipse"] {
+            width: 94%;
+            top: 3%;
+            left: 3%;
+
+            transform: translateX(200%);
+            animation: slideIn 3s ease forwards;
+        }
+
+        & img[src*="patins"] {
+            z-index: 1;
+            transform: translateX(200%);
+            animation: slideIn 3s 200ms ease forwards;
+        }
+
+        & img[src*="Stars 1"] {
+            max-width: 5.5rem;
+            top: 30%;
+            z-index: 0;
+
+            opacity: 0;
+            transform: translateX(400%);
+            animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
+        }
+
+        & img[src*="Stars 2"] {
+            max-width: 2.5rem;
+            right: 0;
+            bottom: 35%;
+
+            transform: translateX(400%);
+            animation: slideIn 2.2s 800ms ease both;
+        }
+    }
 }
+
+    @keyframes slideIn {
+        50% {
+            transform: translateX(-20px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes appear {
+        to {
+            opacity: 1;
+        }
+    }
 
     section.hero .buttons .shadow {
     box-shadow:
