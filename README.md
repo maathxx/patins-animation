@@ -18,3 +18,5 @@ https://maathxx.github.io/patins-animation/
 ## 👨🏽‍💻 Autor
 
 Desenvolvido por **[Matheus Oliveira](https://github.com/maathxx)**.
+
+![Preview do projeto](./assets/preview.png)
